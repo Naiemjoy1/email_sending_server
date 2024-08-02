@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "subject": "Test Subject",
+  "message": "This is a test message.",
+  "recipients": [
+    "recipient1@example.com",
+    "recipient2@example.com",
+    "recipient3@example.com"
+  ]
+}
