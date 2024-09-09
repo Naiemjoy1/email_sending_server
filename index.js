@@ -41,7 +41,7 @@ app.post(`/api/contact`, async (req, res) => {
       const mailOptions = {
         from: `"Ava" <${process.env.EMAIL_USER}>`,
         to: recipient,
-        subject: "Test",
+        subject: "Test 5 sec and toast",
         text: message,
       };
 
@@ -52,7 +52,7 @@ app.post(`/api/contact`, async (req, res) => {
         console.error("Error sending email to:", recipient, "Error:", error);
       }
 
-      await new Promise((resolve) => setTimeout(resolve, 30000)); // 30-second delay
+      await new Promise((resolve) => setTimeout(resolve, 5000)); // 30-second delay
     }
 
     res.status(200).send({ message: "Messages sent successfully" });
