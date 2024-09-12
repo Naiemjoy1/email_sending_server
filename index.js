@@ -39,9 +39,9 @@ app.post(`/api/contact`, async (req, res) => {
   const sendEmails = async () => {
     for (const recipient of recipients) {
       const mailOptions = {
-        from: `"Ava" <${process.env.EMAIL_USER}>`,
+        from: `"Naiem Hasan" <${process.env.EMAIL_USER}>`,
         to: recipient,
-        subject: "Test 5 sec and toast",
+        subject: "Invitation to Join the EndGame Web Development Team Event",
         text: message,
       };
 
